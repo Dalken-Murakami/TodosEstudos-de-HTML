@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /*styler header*/
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            /*nav*/
+            nav {
+                float: left;
+                width: 30%;
+                background: #ccc;
+                padding: 20px;
+            }
+            /*style menu*/
+            nav ul {
+            list-style-type:none;
+            padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+            }
+            /*clear flost aft the colums*/
+            section::after{
+                background: #ccc;
+                content: "";
+                display: table;
+                clear: both;
+
+            }
+            /*footer*/
+            footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            /*responsive*/
+            @media (max-width: 600px){
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    </style>
+    <title>layout</title>
 </head>
 <body>
-
+    <header>
+        <h2>Curso frontend html</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="./06-formularios.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h1>titulo do artigo</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eius, nam velit hic consequatur aliquam ullam officia mollitia! Impedit eaque nihil perferendis vero laborum corrupti nisi a ipsum culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eius, nam velit hic consequatur aliquam ullam officia mollitia! Impedit eaque nihil perferendis vero laborum corrupti nisi a ipsum culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eius, nam velit hic consequatur aliquam ullam officia mollitia! Impedit eaque nihil perferendis vero laborum corrupti nisi a ipsum culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eius, nam velit hic consequatur aliquam ullam officia mollitia! Impedit eaque nihil perferendis vero laborum corrupti nisi a ipsum culpa.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aliquam ad nemo sapiente cumque iste libero numquam itaque optio fuga placeat saepe maiores reiciendis animi, ipsum, nihil officia ipsam eaque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eius, nam velit hic consequatur aliquam ullam officia mollitia! Impedit eaque nihil perferendis vero laborum corrupti nisi a ipsum culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eius, nam velit hic consequatur aliquam ullam officia mollitia! Impedit eaque nihil perferendis vero laborum corrupti nisi a ipsum culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi eius, nam velit hic consequatur aliquam ullam officia mollitia! Impedit eaque nihil perferendis vero laborum corrupti nisi a ipsum culpa.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Desenvolvido por Dalken Murakami</p>
+    </footer>
 </body>
 </html>

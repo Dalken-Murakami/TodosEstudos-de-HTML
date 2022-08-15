@@ -4,9 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulários</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /*styler header*/
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            /*nav*/
+            nav {
+                float: left;
+                width: 30%;
+                background: #ccc;
+                padding: 20px;
+            }
+            /*style menu*/
+            nav ul {
+            list-style-type:none;
+            padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+            }
+            /*clear flost aft the colums*/
+            section::after{
+                background: #ccc;
+                content: "";
+                display: table;
+                clear: both;
+
+            }
+            /*footer*/
+            footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            /*responsive*/
+            @media (max-width: 600px){
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    </style>
+    <title>layout</title>
 </head>
 <body>
-    
+    <header>
+        <h2>Curso frontend html</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="./06-formularios.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Contatos</h1>
+            <p>Prencha os campos abaixo:</p>
+                <form action="">
+                    <div>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" name="Nome" id="nome" placeholder="" required><br>
+                    </div>
+                    <div>
+                        <label for="email" type="email" id="email" placeholder="DIGITE SEU E-MAIL" aria-required="">Email</label><br>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="menssagem">Menssagem</label><br>
+                        <textarea name="menssagem" id="menssagem" cols="30" rows="5" placeholder="Digite sua menssagem"></textarea>
+                    </div>
+                    <div>
+                        <p>
+                            <label>Quais linguagems você sabe?</label>
+                            <input type="checkbox" name="linguagens"> html
+                            <input type="radio" name="linguagens"> css
+                            <input type="radio" name="linguagens"> javascript
+                        </p>
+                    </div>
+                    <div>
+                        <input type="submit" >
+                    </div>
+                </form>
+        </article>
+    </section>
+    <footer>
+        <p>Desenvolvido por Dalken Murakami</p>
+    </footer>
 </body>
 </html>
